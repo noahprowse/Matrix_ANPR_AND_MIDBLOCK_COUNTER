@@ -1,0 +1,32 @@
+[project]
+name = "matrix-traffic-extraction"
+version = "1.1.0"
+description = "Matrix Traffic Data Extraction — ANPR and Midblock Vehicle Counter"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "PySide6>=6.6",
+    "opencv-python>=4.9",
+    "ultralytics>=8.3",
+    "paddleocr>=2.7",
+    "paddlepaddle>=2.6",
+    "pandas>=2.2",
+    "openpyxl>=3.1",
+    "numpy>=1.26",
+    "Pillow>=10.0",
+]
+
+[project.optional-dependencies]
+vision = [
+    "anthropic>=0.40",
+    "openai>=1.50",
+    "google-genai>=1.0",
+    "torch>=2.0",
+    "transformers>=4.35",
+]
+
+[project.scripts]
+matrix = "main:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends._legacy:_Backend"

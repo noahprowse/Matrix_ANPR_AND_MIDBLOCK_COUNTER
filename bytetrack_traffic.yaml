@@ -1,0 +1,10 @@
+# Tuned ByteTrack config for midblock traffic counting
+# Higher track_buffer and match_thresh for better occlusion handling
+
+tracker_type: bytetrack
+track_high_thresh: 0.25   # First-stage match threshold
+track_low_thresh: 0.1     # Second-stage for low-score recovery
+new_track_thresh: 0.3     # Slightly higher to reduce false tracks
+track_buffer: 45           # Frames to keep lost tracks (45 ~1.8s at 25fps)
+match_thresh: 0.85         # Looser matching for traffic scenarios
+fuse_score: True           # Fuse detection score with IoU

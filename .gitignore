@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# YOLO / ML models
+*.pt
+*.onnx
+*.engine
+
+# PaddleOCR inference models
+inference/
+
+# Vehicle classification cache
+*.pkl
+vehicle_cache.pkl
+
+# Logs
+*.log
+
+# Excel outputs
+*.xlsx
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Claude
+.claude/
+
+# Test videos and example reports (large binary files)
+Test Video/
+example reports/
